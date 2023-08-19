@@ -1,0 +1,35 @@
+/**
+ *
+ * @author JohanSebastian
+ */
+
+public class tarea9 {
+    public static void main(String[] args) {
+      double[] calificaciones = {10.0, 4.2, 2.1};
+    double sumaCalificaciones = 0.0;
+
+    // Calcular
+    for (double calificacion : calificaciones) {
+            sumaCalificaciones += calificacion;}
+    double media = sumaCalificaciones / calificaciones.length;
+    double notaFinal = media + 1.0;
+
+    System.out.println("Calificaciones: " + arrayToString(calificaciones));
+     System.out.println("Media: " + media);
+    System.out.println("Nota final: " + notaFinal);
+    }
+
+    // Método de convercion
+    public static String arrayToString(double[] array) {
+    StringBuilder sb = new StringBuilder();
+    sb.append("[");
+    for (int i = 0; i < array.length; i++) {
+    sb.append(array[i]);
+    if (i < array.length - 1) {
+    sb.append(", ");
+    }
+    }
+    sb.append("]");
+    return sb.toString();
+    }
+}
