@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+/**
+ * 
+ *
+ * @author JohanSebastian
+ */
+
+public class Tarea9{
+    public static void main(String[] args) {
+        int edad ;    
+        Scanner ingreso=new Scanner(System.in);
+        System.out.print("INGRESE EDAD : ");
+        edad = Integer.parseInt(ingreso.next());
+        if(edad >= 18){
+            System.out.println("ES MAYOR DE EDAD");
+        }else{
+            System.out.println("ES MENOR DE EDAD");
+        }    
+    }     
+}
