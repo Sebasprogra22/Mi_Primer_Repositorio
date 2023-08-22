@@ -1,0 +1,28 @@
+/**
+ * 
+ *
+ * @author JohanSebastian
+ */
+
+public class Tarea5 {
+
+    public static void main(String[] args) {
+    int Nu1 = 3554;
+    int Nu2 = 3243;
+    int Nu3 = 3554;
+
+if (Nu1 > Nu2)
+  System.out.println("Nu1:3554");
+
+if (Nu2 <Nu1)
+  System.out.println("Nu2:3243");
+
+if (Nu3> Nu2)
+  System.out.println("Nu3:3554");
+
+System.out.println("Se espera que No todos son iguales ni diferentes");
+
+
+
+    }
+    }
