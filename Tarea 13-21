@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author JohanSebastian
+ */
+
+public class Tarea13{
+
+    static Scanner sc = new Scanner(System.in);
+   
+    public static void main(String[] args) {
+       
+        int nota;
+       
+        System.out.println("Escribe una nota del 0 a 10");
+        nota=sc.nextInt();
+       
+        switch (nota) {
+       
+        case 10:   
+        case 9:
+            System.out.println("Sobresaliente");
+            break;
+           
+        case 8:
+        case 7:
+            System.out.println("Notable");
+            break;
+           
+        case 6:
+            System.out.println("Bien");
+            break;
+        case 5:
+            System.out.println("Suficiente");
+            break;
+           
+        default:
+            System.out.println("Suspenso");
+            break;
+        }
+       
+        //Con if else
+        if(nota==5)
+        {
+            System.out.println("Suficiente");
+        }else if(nota==6)
+        {
+            System.out.println("Bien");
+        }else if(nota==7)
+        {
+            System.out.println("Notable");
+       
+        }else
+        {
+            System.out.println("Suspenso");
+        }
+       
+    }
+
+}
