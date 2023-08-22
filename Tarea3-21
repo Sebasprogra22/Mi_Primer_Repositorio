@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author JohanSebastian
+ */
+
+// Declaración de clase
+public class Tarea3
+{public static void main( String[] args )
+  {// Variables
+      int numero1;
+      int numero2;
+  
+        Scanner entrada = new Scanner( System.in );
+        System.out.print( "Digite el primer entero: " );
+        numero1 = entrada.nextInt();
+        
+        System.out.print( "Digite el segundo entero: " );
+        numero2 = entrada.nextInt();
+        
+        
+        if( numero1 % numero2 == 0 )
+        {
+            System.out.printf( "\n%d es múltiplo de %d.", numero1, numero2 );
+        }
+        
+        System.exit(0);
+        
+    } 
+}
