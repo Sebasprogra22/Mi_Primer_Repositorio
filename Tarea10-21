@@ -1,0 +1,24 @@
+import javax.swing.JOptionPane;
+/**
+ * 
+ *
+ * @author JohanSebastian
+ */
+
+public class Tarea10 {
+    public static void main(String[] args) {
+        char letra;
+        
+        letra= JOptionPane.showInputDialog("Introduzca una letra: ").charAt(0);
+        
+        if(Character.isUpperCase(letra)){
+            JOptionPane.showMessageDialog(null, "Es una letra mayúscula");
+        } 
+        else if(Character.isLowerCase(letra)){
+            JOptionPane.showMessageDialog(null, "Es una letra minúscula");
+        }
+    else {
+            JOptionPane.showMessageDialog(null, "No es una letra");
+        }
+    }
+}
