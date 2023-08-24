@@ -1,0 +1,25 @@
+import java.util.Scanner;
+/**
+ *
+ * @authorJohanSebastian
+ */
+public class tarea19 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese un carácter: ");
+        char caracter = sc.next().charAt(0);
+
+        int codigoASCII = (int) caracter;
+
+        if (codigoASCII >= 48 && codigoASCII <= 57) {
+            System.out.println("El carácter es un dígito");
+        } else if (codigoASCII >= 65 && codigoASCII <= 90) {
+            System.out.println("El carácter es una letra mayúscula");
+        } else if (codigoASCII >= 97 && codigoASCII <= 122) {
+            System.out.println("El carácter es una letra minúscula");
+        } else {
+            System.out.println("El carácter no es un dígito, una letra mayúscula ni una letra minúscula");
+        }
+    }
