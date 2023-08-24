@@ -1,0 +1,31 @@
+import java.util.Scanner;
+/**
+ *
+ * @author JohanSebastian
+ */
+public class tarea21 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Ingrese tu mes de nacimiento: ");
+        String mes = sc.next();
+
+        System.out.println("Ingrese tu día de nacimiento: ");
+        int dia = sc.nextInt();
+
+        String signo = "";
+
+        switch (mes) {
+            case "enero":
+                if (dia >= 20) {
+                    signo = "Acuario";
+                } else {
+                    signo = "Capricornio";
+                }
+                break;
+            case "febrero":
+                if (dia >= 19) {
+                    signo = "Piscis";
+                } else {
+                 …
