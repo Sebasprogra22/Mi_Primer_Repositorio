@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class Union1 {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        String arregloA[], arregloB[],arregloC[];
+
+        arregloA = new String[2];
+        arregloB = new String[2];
+        arregloC = new String[4];
+
+        System.out.println("Arreglo A: ");
+
+        for (int i = 0; i < 2; i++){
+            System.out.print("Digite dos palabras para formar la frase: ");
+            arregloA[i] = teclado.nextLine();
+        }
+        System.out.println("Arreglo B: ");
+        for (int i = 0; i< 2; i++){
+            System.out.println("Digite dos palabras para formar la frase: ");
+            arregloB[i] = teclado.nextLine();
+        }
+
+        //UNIR LOS DOS ARREGLOS
+        int posiciones = 0;
+        for (int i = 0; i < 2; i++){
+            arregloC[posiciones] = arregloA[i];
+
+            posiciones++;
+
+            arregloC[posiciones] = arregloB[i];
+
+            posiciones++;
+
+        }
+
+        //MOSTRAR LOS ARREGLOS UNIDOS
+        System.out.println("Arreglos unidos");
+        for (int i = 0; i < 4; i++){
+            System.out.println(arregloC[i]);
+        }
+
+    }
+}
